@@ -1,0 +1,41 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f5f5f5"/>
+  <rect x="50" y="50" width="700" height="400" rx="10" fill="white" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="60" rx="10" fill="#4285f4"/>
+  <text x="100" y="85" font-family="Arial" font-size="24" fill="white">MediCare</text>
+  
+  <!-- Search Bar -->
+  <rect x="150" y="130" width="500" height="50" rx="25" fill="white" stroke="#ddd" stroke-width="2"/>
+  <text x="180" y="160" font-family="Arial" font-size="18" fill="#777">Search for doctors, specialties...</text>
+  <circle cx="620" cy="155" r="15" fill="#4285f4"/>
+  <text x="615" y="161" font-family="Arial" font-size="18" fill="white">🔍</text>
+  
+  <!-- Categories -->
+  <text x="150" y="220" font-family="Arial" font-size="22" font-weight="bold" fill="#333">Popular Specialties</text>
+  
+  <!-- Category Cards -->
+  <rect x="150" y="240" width="120" height="120" rx="10" fill="white" stroke="#ddd" stroke-width="2"/>
+  <circle cx="210" cy="280" r="30" fill="#ea4335"/>
+  <text x="210" y="285" font-family="Arial" font-size="14" fill="white" text-anchor="middle">❤️</text>
+  <text x="210" y="330" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">Cardiology</text>
+  
+  <rect x="290" y="240" width="120" height="120" rx="10" fill="white" stroke="#ddd" stroke-width="2"/>
+  <circle cx="350" cy="280" r="30" fill="#fbbc05"/>
+  <text x="350" y="285" font-family="Arial" font-size="14" fill="white" text-anchor="middle">🦷</text>
+  <text x="350" y="330" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">Dentistry</text>
+  
+  <rect x="430" y="240" width="120" height="120" rx="10" fill="white" stroke="#ddd" stroke-width="2"/>
+  <circle cx="490" cy="280" r="30" fill="#34a853"/>
+  <text x="490" y="285" font-family="Arial" font-size="14" fill="white" text-anchor="middle">👁️</text>
+  <text x="490" y="330" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">Ophthalmology</text>
+  
+  <rect x="570" y="240" width="120" height="120" rx="10" fill="white" stroke="#ddd" stroke-width="2"/>
+  <circle cx="630" cy="280" r="30" fill="#4285f4"/>
+  <text x="630" y="285" font-family="Arial" font-size="14" fill="white" text-anchor="middle">🧠</text>
+  <text x="630" y="330" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">Neurology</text>
+  
+  <!-- Step Indicator -->
+  <text x="400" y="420" font-family="Arial" font-size="18" fill="#4285f4" text-anchor="middle">Step 1: Choose Specialty</text>
+</svg>

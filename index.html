@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Healthcare Platform Documentation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="container">
+                <a href="#home" class="logo" aria-label="MediCare Home">
+                    <div class="logo-container">
+                        <img src="images/logo.png" alt="MediCare Logo" width="50" height="50">
+                        <div class="logo-text">
+                            <span class="logo-name">MediCare</span>
+                            <span class="logo-tagline">Healthcare Platform</span>
+                        </div>
+                    </div>
+                </a>
+                <button class="nav-toggle" id="openMenu" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                    <span class="sr-only">Menu</span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <button class="nav-close" id="closeMenu" aria-label="Close navigation menu">
+                        <i class="fas fa-times" aria-hidden="true"></i>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <ul>
+                        <li><a href="#home" class="active" aria-current="page">Home</a></li>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#problem">Problem Definition</a></li>
+                        <li><a href="#analysis">Project Analysis</a></li>
+                        <li><a href="#tools">Project Tools</a></li>
+                        <li><a href="#design">System Design</a></li>
+                        <li><a href="#demo">Interactive Demo</a></li>
+                        <li><a href="#usecases">Use Cases</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#" class="dropdown-toggle">More <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#acknowledgments">Acknowledgments</a></li>
+                                <li><a href="#summary">Summary</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-indicator" aria-hidden="true"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="typing">MediCare</h1>
+                <h2>Enhancing Healthcare Experience</h2>
+                <p>MediCare is a comprehensive medical application and website designed to simplify healthcare access, enabling users to book doctor appointments, view specializations, and access a transparent rating system.</p>
+                <div class="hero-buttons">
+                    <a href="#introduction" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <img src="images/medicare-hero.png" alt="MediCare App Interface" class="parallax main-hero-image" data-speed="0.2">
+                    <div class="floating-elements">
+                        <div class="floating-icon icon-1">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="floating-icon icon-2">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <div class="floating-icon icon-3">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="floating-icon icon-4">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="introduction">
+        <div class="container">
+            <div class="section-header">
+                <h2>Introduction</h2>
+                <p>Overview of the MediCare project</p>
+            </div>
+            <div class="introduction-content">
+                <p>In this chapter, we discuss the overview of the MediCare project, its scope, limitations, and key terminologies used throughout the documentation.</p>
+                <p>MediCare is an application and website designed to enhance the healthcare experience by integrating a variety of medical services into a single, comprehensive platform. The application allows users to easily book doctor appointments, view their specializations, and access a transparent rating system that helps them make well-informed decisions. The project prioritizes credibility, ensuring that all information about doctors is verified for a secure and reliable experience. By leveraging modern technologies and a streamlined design, MediCare provides an innovative solution that meets user needs and improves the quality of healthcare services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Definition Section -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2>Problem Definition</h2>
+                <p>Challenges in the healthcare system</p>
+            </div>
+            <div class="problem-content">
+                <p>In this chapter, we explore the core problem that the MediCare project aims to address, delving into the challenges faced in the medical field that led to its development.</p>
+                <p>Accessing reliable healthcare services remains a challenge due to fragmented systems, lack of verified information, and limited accessibility to medical professionals. Patients often struggle to find accurate information about doctors, such as their specializations, availability, or credibility. Furthermore, there is no centralized platform that offers a seamless and trustworthy way to book appointments, check doctor ratings, and manage healthcare needs efficiently. These challenges lead to delays in treatment, patient frustration, and inefficiencies in the healthcare system.</p>
+                <h3>Issues</h3>
+                <table class="issues-table">
+                    <thead>
+                        <tr>
+                            <th>Issue</th>
+                            <th>Weight</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lack of a unified platform for healthcare features</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Difficulty accessing verified doctor information</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Limited tools for efficient healthcare management</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Objectives</h3>
+                <ul class="objectives-list">
+                    <li>Ensure all doctor information is verified and credible to enhance user trust.</li>
+                    <li>Implement a transparent, user-friendly rating system for informed decisions.</li>
+                    <li>Provide an intuitive, technology-driven solution to streamline healthcare access.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Analysis Section -->
+    <section id="analysis" class="analysis">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Analysis</h2>
+                <p>Feasibility and approach of the MediCare solution</p>
+            </div>
+            <div class="analysis-content">
+                <p>In this section, we analyze the proposed solution in terms of its feasibility, objectives, and expected outcomes, evaluating different approaches for the MediCare project.</p>
+                <p>The Agile methodology, involving iterative phases of planning, executing, and evaluating, is used for project management. Agile offers flexibility, adaptability to rapid changes, a customer-centric approach with continuous feedback, improved quality through testing, enhanced collaboration, risk management, faster time-to-market, and continuous improvement. For MediCare, Agile ensures a flexible, user-focused, and efficient development process, delivering valuable features early in the fast-paced healthcare domain.</p>
+                <h3>Agile Stages</h3>
+                <div class="agile-diagram">
+                    <!-- Placeholder for SVG or CSS-based circular diagram -->
+                    <div class="stage">Plan</div>
+                    <div class="stage">Design</div>
+                    <div class="stage">Develop</div>
+                    <div class="stage">Test</div>
+                    <div class="stage">Deploy</div>
+                    <div class="stage">Review</div>
+                </div>
+                <h3>SDLC to Agile Mapping</h3>
+                <ul class="sdlc-mapping">
+                    <li><strong>Requirement</strong> → Sprint Planning</li>
+                    <li><strong>Design</strong> → Overlaps with development in sprints</li>
+                    <li><strong>Development</strong> → Sprint Execution</li>
+                    <li><strong>Testing</strong> → Continuous throughout sprints</li>
+                    <li><strong>Deployment</strong> → Release phase in increments</li>
+                    <li><strong>Review</strong> → Sprint Review and Retrospective</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Tools</h2>
+                <p>Technologies and methodologies used</p>
+            </div>
+            
+            <div class="tools-category">
+                <h3 class="category-title">Tools used in Back-end</h3>
+                <div class="tools-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Technology</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Language</td>
+                                <td>PHP</td>
+                            </tr>
+                            <tr>
+                                <td>Framework</td>
+                                <td>Laravel 10</td>
+                            </tr>
+                            <tr>
+                                <td>Database</td>
+                                <td>MySQL</td>
+                            </tr>
+                            <tr>
+                                <td>Authentication</td>
+                                <td>JWT (JSON Web Tokens)</td>
+                            </tr>
+                            <tr>
+                                <td>Payment Processing</td>
+                                <td>Stripe API</td>
+                            </tr>
+                            <tr>
+                                <td>AI Analysis</td>
+                                <td>Gemini API</td>
+                            </tr>
+                            <tr>
+                                <td>OAuth Integration</td>
+                                <td>Google API Client</td>
+                            </tr>
+                            <tr>
+                                <td>Email service</td>
+                                <td>Gmail App Password</td>
+                            </tr>
+                            <tr>
+                                <td>Monitoring</td>
+                                <td>Laravel Telescope</td>
+                            </tr>
+                            <tr>
+                                <td>Testing</td>
+                                <td>Postman</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="tools-category">
+                <h3 class="category-title">Tools used in Mobile Application</h3>
+                <div class="tools-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Technology</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Language</td>
+                                <td>Dart</td>
+                            </tr>
+                            <tr>
+                                <td>Framework</td>
+                                <td>Flutter</td>
+                            </tr>
+                            <tr>
+                                <td>State Management</td>
+                                <td>Bloc / Cubit (Flutter Bloc)</td>
+                            </tr>
+                            <tr>
+                                <td>Networking</td>
+                                <td>Dio / http</td>
+                            </tr>
+                            <tr>
+                                <td>Authentication</td>
+                                <td>JWT Integration</td>
+                            </tr>
+                            <tr>
+                                <td>UI Design</td>
+                                <td>Material Design + Custom Widgets</td>
+                            </tr>
+                            <tr>
+                                <td>Routing</td>
+                                <td>GoRouter / Navigator 2.0</td>
+                            </tr>
+                            <tr>
+                                <td>Local Storage</td>
+                                <td>SharedPreferences</td>
+                            </tr>
+                            <tr>
+                                <td>Image Caching</td>
+                                <td>CachedNetworkImage</td>
+                            </tr>
+                            <tr>
+                                <td>Animations</td>
+                                <td>flutter_animate / Lottie</td>
+                            </tr>
+                            <tr>
+                                <td>Maps Integration</td>
+                                <td>Google Maps Flutter</td>
+                            </tr>
+                            <tr>
+                                <td>Form Validation</td>
+                                <td>Flutter Form + Validators</td>
+                            </tr>
+                            <tr>
+                                <td>Responsive Design</td>
+                                <td>flutter_screenutil / LayoutBuilder</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="tools-category">
+                <h3 class="category-title">Tools used in Front-end</h3>
+                <div class="tools-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Technology</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Core Technologies</td>
+                                <td>HTML, CSS, TypeScript</td>
+                            </tr>
+                            <tr>
+                                <td>Framework</td>
+                                <td>Angular 18 (standalone components)</td>
+                            </tr>
+                            <tr>
+                                <td>UI Libraries</td>
+                                <td>Bootstrap 5.3, PrimeNG, Font Awesome, Animate.css</td>
+                            </tr>
+                            <tr>
+                                <td>State Management</td>
+                                <td>RxJS Observables</td>
+                            </tr>
+                            <tr>
+                                <td>Internationalization</td>
+                                <td>ngx-translate</td>
+                            </tr>
+                            <tr>
+                                <td>Authentication</td>
+                                <td>JWT Authentication, Google Auth</td>
+                            </tr>
+                            <tr>
+                                <td>Payment Processing</td>
+                                <td>Stripe.js</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="tools-category">
+                <h3 class="category-title">Tools used in UI/UX</h3>
+                <div class="tools-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Technology</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Design Tool</td>
+                                <td>Figma</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Design Section -->
+    <section id="design" class="design">
+        <div class="container">
+            <div class="section-header">
+                <h2>System Design</h2>
+                <p>Diagrams and architecture of the MediCare system</p>
+            </div>
+            <div class="design-content">
+                <div class="design-card">
+                    <h3>Use Case Diagram</h3>
+                    <p>Illustrates interactions between users (patients, doctors, admins) and the system for functionalities like booking appointments and managing schedules.</p>
+                    <img src="images/diagrams/Usecase.png" alt="Use Case Diagram" class="parallax" data-speed="0.1">
+                </div>
+                <div class="design-card">
+                    <h3>Context Diagram</h3>
+                    <p>Shows the system boundary with external entities like patients, doctors, and pharmacies.</p>
+                    <img src="images/diagrams/dfd_level _0.png" alt="Context Diagram (DFD Level 0)" class="parallax" data-speed="0.1">
+                </div>
+                <div class="design-card">
+                    <h3>Data Flow Diagram</h3>
+                    <p>Depicts data flow between processes (e.g., booking), data stores (e.g., database), and external entities.</p>
+                    <img src="images/diagrams/dfd_level_1.png" alt="Data Flow Diagram Level 1" class="parallax" data-speed="0.1">
+                </div>
+                <div class="design-card">
+                    <h3>Entity-Relation Diagram</h3>
+                    <p>Represents the database schema with entities like User, Doctor, Appointment, etc.</p>
+                    <img src="images/diagrams/erd.png" alt="Entity-Relation Diagram" class="parallax" data-speed="0.1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interactive Demo</h2>
+                <p>Experience the MediCare application workflow</p>
+            </div>
+            <div class="demo-content">
+                <div class="demo-tabs">
+                    <button class="demo-tab active" data-tab="booking">Appointment Booking</button>
+                    <button class="demo-tab" data-tab="search">Doctor Search</button>
+                    <button class="demo-tab" data-tab="profile">Patient Profile</button>
+                </div>
+                <div class="demo-container">
+                    <div class="demo-tab-content active" id="booking-tab">
+                        <div class="demo-description">
+                            <h3>Appointment Booking Flow</h3>
+                            <p>MediCare simplifies the process of booking medical appointments with a user-friendly interface. Follow the steps below to see how patients can easily schedule appointments with their preferred doctors.</p>
+                            <div class="demo-steps">
+                                <div class="demo-step active" data-step="1">
+                                    <div class="step-number">1</div>
+                                    <div class="step-text">Choose Specialty</div>
+                                </div>
+                                <div class="demo-step" data-step="2">
+                                    <div class="step-number">2</div>
+                                    <div class="step-text">Select Doctor</div>
+                                </div>
+                                <div class="demo-step" data-step="3">
+                                    <div class="step-number">3</div>
+                                    <div class="step-text">Choose Time</div>
+                                </div>
+                                <div class="demo-step" data-step="4">
+                                    <div class="step-number">4</div>
+                                    <div class="step-text">Confirm & Pay</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-showcase">
+                            <div class="demo-image-container">
+                                <img src="images/demo/booking-step1.svg" alt="Choose Specialty" class="demo-image active" data-step="1">
+                                <img src="images/demo/booking-step2.svg" alt="Select Doctor" class="demo-image" data-step="2">
+                                <img src="images/demo/booking-step3.svg" alt="Choose Time" class="demo-image" data-step="3">
+                                <img src="images/demo/booking-step4.svg" alt="Confirm & Pay" class="demo-image" data-step="4">
+                            </div>
+                            <div class="demo-controls">
+                                <button class="demo-control" id="prev-step" disabled>Previous</button>
+                                <button class="demo-control" id="next-step">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-tab-content" id="search-tab">
+                        <div class="demo-description">
+                            <h3>Doctor Search & Filtering</h3>
+                            <p>MediCare offers advanced search capabilities to help patients find the right healthcare provider. Users can search by specialty, location, availability, and read reviews from other patients.</p>
+                            <ul class="demo-features">
+                                <li><i class="fas fa-filter"></i> Filter by specialty, location, and availability</li>
+                                <li><i class="fas fa-star"></i> Sort by ratings and reviews</li>
+                                <li><i class="fas fa-map-marker-alt"></i> Find doctors near your location</li>
+                                <li><i class="fas fa-calendar-check"></i> See real-time availability</li>
+                            </ul>
+                            <div class="demo-links">
+                                <a href="https://deepwiki.com/abdelrahmanabdelsamie7/MediCareAPI" target="_blank" class="demo-link">
+                                    <i class="fas fa-code"></i> View API Documentation
+                                </a>
+                                <a href="https://deepwiki.com/abdelrahmanabdelsamie7/MediCare" target="_blank" class="demo-link">
+                                    <i class="fas fa-book"></i> View Project Wiki
+                                </a>
+                                <a href="https://deepwiki.com/ALi-Maher-Mohamed/MediaCare" target="_blank" class="demo-link">
+                                    <i class="fas fa-mobile-alt"></i> Mobile App Documentation
+                                </a>
+                            </div>
+                        </div>
+                        <div class="demo-showcase">
+                            <div class="demo-video-container">
+                                <div class="demo-video-placeholder">
+                                    <i class="fas fa-play-circle"></i>
+                                    <p>Doctor Search Demo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-tab-content" id="profile-tab">
+                        <div class="demo-description">
+                            <h3>Patient Profile & Health Records</h3>
+                            <p>MediCare provides a comprehensive patient profile system where users can manage their personal information, view medical history, track appointments, and access health records.</p>
+                            <ul class="demo-features">
+                                <li><i class="fas fa-history"></i> View appointment history</li>
+                                <li><i class="fas fa-file-medical"></i> Access medical records</li>
+                                <li><i class="fas fa-bell"></i> Receive appointment reminders</li>
+                                <li><i class="fas fa-credit-card"></i> Manage payment methods</li>
+                            </ul>
+                        </div>
+                        <div class="demo-showcase">
+                            <div class="demo-image-container profile-mockup">
+                                <div class="profile-mockup-placeholder">
+                                    <i class="fas fa-user-circle"></i>
+                                    <p>Patient Profile Interface</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="usecases" class="usecases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Use Cases</h2>
+                <p>Detailed system interactions for users</p>
+            </div>
+            <div class="usecases-container">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">1. Google Login</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user logs into the system using their Google account, creating or accessing their account and earning daily login points.</p>
+                            <p><strong>Actor:</strong> User</p>
+                            <p><strong>Preconditions:</strong> User has a valid Google account. Google ID token is provided and verifiable.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits Google ID token after signing in via Google.</li>
+                                <li>System validates token using Google Client API.</li>
+                                <li>System finds or creates a user based on email, updating name, google_id, and avatar.</li>
+                                <li>System awards 10 points for daily login if 24 hours have passed since last_visit.</li>
+                                <li>System generates and returns a JWT access_token and user details.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> User is authenticated; account created/updated; token issued.</p>
+                            <p><strong>Exceptions:</strong> Invalid or unverifiable Google token returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">2. User Registration</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user signs up by providing personal details and receives a verification email.</p>
+                            <p><strong>Actor:</strong> User</p>
+                            <p><strong>Preconditions:</strong> User has a unique, valid email address.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>Users submit name, email, phone, address, birth date, and password.</li>
+                                <li>System validates input (e.g., unique email).</li>
+                                <li>System creates account and sends verification email with token.</li>
+                                <li>System returns success message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Account created; verification email sent.</p>
+                            <p><strong>Exceptions:</strong> Invalid input (e.g., duplicate email) returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">3. User Login</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user logs in with email and password to access the system.</p>
+                            <p><strong>Actor:</strong> Registered User</p>
+                            <p><strong>Preconditions:</strong> User has a verified account (email_verified_at not null). Correct email and password provided.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User enters email and password.</li>
+                                <li>System validates credentials and email verification.</li>
+                                <li>System issues JWT token and awards 10 points for daily login if applicable.</li>
+                                <li>System returns token and user details.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> User authenticated; token issued.</p>
+                            <p><strong>Exceptions:</strong> Invalid credentials or unverified email return errors.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">4. Email Verification</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user verifies their email using a link to activate their account.</p>
+                            <p><strong>Actor:</strong> Registered User</p>
+                            <p><strong>Preconditions:</strong> User has a valid, non-expired verification_token.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User clicks verification link in email.</li>
+                                <li>System validates token and marks email verified.</li>
+                                <li>System redirects to login page.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Email verified; user can log in.</p>
+                            <p><strong>Exceptions:</strong> Invalid/expired token returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">5. Resend Verification Email</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user requests a new verification email.</p>
+                            <p><strong>Actor:</strong> Registered User</p>
+                            <p><strong>Preconditions:</strong> User has an unverified account (email_verified_at null). Email exists in system.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits email for resend.</li>
+                                <li>System checks unverified status and sends new email.</li>
+                                <li>System returns success message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> New verification email sent.</p>
+                            <p><strong>Exceptions:</strong> Invalid/already verified email returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">6. Forgot Password</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user requests a password reset link.</p>
+                            <p><strong>Actor:</strong> Registered User</p>
+                            <p><strong>Preconditions:</strong> User's email exists in system.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits email.</li>
+                                <li>System validates email and sends reset link with token.</li>
+                                <li>System returns success message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Reset email sent.</p>
+                            <p><strong>Exceptions:</strong> Invalid email or email failure returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">7. Reset Password</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user resets their password using a reset link.</p>
+                            <p><strong>Actor:</strong> Registered User</p>
+                            <p><strong>Preconditions:</strong> User has a valid, non-expired reset_token.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits email, token, and new password.</li>
+                                <li>System validates token and updates password.</li>
+                                <li>System returns success message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Password updated; user can log in.</p>
+                            <p><strong>Exceptions:</strong> Invalid/expired token returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">8. Get Account Details</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A logged-in user views their account details.</p>
+                            <p><strong>Actor:</strong> Authenticated User</p>
+                            <p><strong>Preconditions:</strong> User is authenticated with valid JWT token.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User requests account details.</li>
+                                <li>System returns user data (e.g., name, email).</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> User receives account details.</p>
+                            <p><strong>Exceptions:</strong> Invalid token returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">9. Logout</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user logs out, ending their session.</p>
+                            <p><strong>Actor:</strong> Authenticated User</p>
+                            <p><strong>Preconditions:</strong> User is authenticated with valid JWT token.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User sends logout request.</li>
+                                <li>System invalidates token and returns success message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Session ended.</p>
+                            <p><strong>Exceptions:</strong> Invalid token returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">10. Delete Account</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user deletes their account.</p>
+                            <p><strong>Actor:</strong> Authenticated User</p>
+                            <p><strong>Preconditions:</strong> User is authenticated with valid JWT token. Non-OAuth users must provide correct password.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits deletion request (with password if non-OAuth).</li>
+                                <li>System verifies credentials, logs out, and deletes account.</li>
+                                <li>System returns success message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Account deleted.</p>
+                            <p><strong>Exceptions:</strong> Invalid token/password returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">11. View Available Appointments</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user views available appointment slots for a doctor on a specific day.</p>
+                            <p><strong>Actor:</strong> User</p>
+                            <p><strong>Preconditions:</strong> Doctor ID exists in the doctors table. Specified day is valid.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User selects a doctor and day.</li>
+                                <li>System retrieves unbooked appointments for the doctor and day.</li>
+                                <li>System returns list of available appointments.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> User receives available appointment slots.</p>
+                            <p><strong>Exceptions:</strong> Invalid doctor ID returns empty or error response.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">12. Create Reservation</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user books an appointment with a doctor, applying a discount based on points.</p>
+                            <p><strong>Actor:</strong> Authenticated User</p>
+                            <p><strong>Preconditions:</strong> User is authenticated with a valid JWT token. Doctor, clinic, and appointment IDs exist; appointment is unbooked. User has sufficient points for discount.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits doctor, clinic, appointment IDs, and status.</li>
+                                <li>System validates input and checks appointment availability.</li>
+                                <li>System calculates discount (points/10 * 5), deducts points, and creates reservation.</li>
+                                <li>System marks appointment as booked and sends confirmation email.</li>
+                                <li>System returns reservation details.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Reservation created; appointment booked; email sent.</p>
+                            <p><strong>Exceptions:</strong> Invalid input, booked appointment, or insufficient points return errors.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">13. Confirm Reservation (User)</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user confirms their pending reservation.</p>
+                            <p><strong>Actor:</strong> Authenticated User</p>
+                            <p><strong>Preconditions:</strong> User is authenticated and owns the reservation. Reservation exists and is in pending status.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User requests to confirm reservation.</li>
+                                <li>System verifies user ownership and pending status.</li>
+                                <li>System updates reservation to confirmed and marks appointment as booked.</li>
+                                <li>System returns confirmation message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Reservation confirmed; appointment booked.</p>
+                            <p><strong>Exceptions:</strong> Unauthorized user or non-pending reservation returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">14. Cancel Reservation (User)</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user cancels their reservation.</p>
+                            <p><strong>Actor:</strong> Authenticated User</p>
+                            <p><strong>Preconditions:</strong> User is authenticated and owns the reservation. Reservation exists.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User requests to cancel reservation.</li>
+                                <li>System verifies user ownership.</li>
+                                <li>System deletes related notifications, marks appointment as unbooked, and deletes reservation.</li>
+                                <li>System returns cancellation message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Reservation canceled; appointment freed.</p>
+                            <p><strong>Exceptions:</strong> Unauthorized user or non-existent reservation returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">15. View User Reservations</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user views their reservation history.</p>
+                            <p><strong>Actor:</strong> Authenticated User</p>
+                            <p><strong>Preconditions:</strong> User is authenticated with a valid JWT token.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User requests their reservations.</li>
+                                <li>System retrieves user's reservations with doctor, clinic, and appointment details.</li>
+                                <li>System returns reservation list.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> User receives reservation history.</p>
+                            <p><strong>Exceptions:</strong> Unauthorized user returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">16. View Doctor Reservations</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A doctor views all their reservations.</p>
+                            <p><strong>Actor:</strong> Authenticated Doctor</p>
+                            <p><strong>Preconditions:</strong> Doctor is authenticated with a valid token and has doctor role.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>Doctor requests their reservations.</li>
+                                <li>System retrieves reservations linked to the doctor with user, clinic, and appointment details.</li>
+                                <li>System returns reservation list.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Doctor receives reservation list.</p>
+                            <p><strong>Exceptions:</strong> Unauthorized or non-doctor user returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">17. View Specific Reservation (Doctor)</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A doctor views details of a specific reservation.</p>
+                            <p><strong>Actor:</strong> Authenticated Doctor</p>
+                            <p><strong>Preconditions:</strong> Doctor is authenticated with a valid token and has doctor role. Reservation exists and belongs to the doctor.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>Doctor requests reservation by ID.</li>
+                                <li>System retrieves reservation with user, clinic, and appointment details.</li>
+                                <li>System returns reservation data.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Doctor receives reservation details.</p>
+                            <p><strong>Exceptions:</strong> Unauthorized, non-doctor, or non-existent reservation returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">18. Mark Notification as Read</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user or doctor marks a reservation-related notification as read.</p>
+                            <p><strong>Actor:</strong> Authenticated User or Doctor</p>
+                            <p><strong>Preconditions:</strong> User or doctor is authenticated. Notification exists and belongs to the user/doctor.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User/doctor requests to mark notification as read.</li>
+                                <li>System verifies notification ownership and marks it as read.</li>
+                                <li>System returns success message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Notification marked as read.</p>
+                            <p><strong>Exceptions:</strong> Unauthorized or non-existent notification returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">19. Confirm Reservation (Doctor)</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A doctor confirms a pending reservation.</p>
+                            <p><strong>Actor:</strong> Authenticated Doctor</p>
+                            <p><strong>Preconditions:</strong> Doctor is authenticated with a valid token and has doctor role. Reservation exists, belongs to the doctor, and is pending.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>Doctor requests to confirm reservation.</li>
+                                <li>System verifies doctor ownership and pending status.</li>
+                                <li>System updates reservation to confirmed and marks appointment as booked.</li>
+                                <li>System returns confirmation message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Reservation confirmed; appointment booked.</p>
+                            <p><strong>Exceptions:</strong> Unauthorized, non-doctor, or non-pending reservation returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">20. Cancel Reservation (Doctor)</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A doctor cancels a reservation.</p>
+                            <p><strong>Actor:</strong> Authenticated Doctor</p>
+                            <p><strong>Preconditions:</strong> Doctor is authenticated with a valid token and has doctor role. Reservation exists, belongs to the doctor, and is not already canceled.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>Doctor requests to cancel reservation.</li>
+                                <li>System verifies doctor ownership.</li>
+                                <li>System deletes notifications, marks appointment as unbooked, and sets reservation to canceled.</li>
+                                <li>System returns cancellation message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Reservation canceled; appointment freed.</p>
+                            <p><strong>Exceptions:</strong> Unauthorized, non-doctor, or already canceled reservation returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">21. Mark Reservation as Visited</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A doctor marks a confirmed reservation as visited after the appointment.</p>
+                            <p><strong>Actor:</strong> Authenticated Doctor</p>
+                            <p><strong>Preconditions:</strong> Doctor is authenticated with a valid token and has doctor role. Reservation exists, belongs to the doctor, and is confirmed.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>Doctor requests to mark reservation as visited.</li>
+                                <li>System verifies doctor ownership and confirmed status.</li>
+                                <li>System updates reservation to visited.</li>
+                                <li>System returns success message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Reservation marked as visited.</p>
+                            <p><strong>Exceptions:</strong> Unauthorized, non-doctor, or non-confirmed reservation returns error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">22. Initiate Payment</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user initiates a payment for a reservation using a card.</p>
+                            <p><strong>Actor:</strong> Authenticated User</p>
+                            <p><strong>Preconditions:</strong> User is authenticated with a valid JWT token. Reservation ID exists in the reservations table. Stripe API is configured with a valid secret key.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits reservation ID and payment amount.</li>
+                                <li>System validates input (amount > 0, valid reservation ID).</li>
+                                <li>System creates a Stripe PaymentIntent with amount (in piastres) and currency (EGP).</li>
+                                <li>System updates reservation with payment_intent_id, currency (EGP), and pending status.</li>
+                                <li>System returns clientSecret for frontend card processing.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Payment intent created; user can complete payment on frontend.</p>
+                            <p><strong>Exceptions:</strong> Invalid reservation, insufficient amount, or Stripe API errors return error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">23. Update Payment Status</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> The system updates a reservation's payment status after Stripe confirms payment success.</p>
+                            <p><strong>Actor:</strong> Authenticated User</p>
+                            <p><strong>Preconditions:</strong> User is authenticated with a valid JWT token. Reservation exists with a valid payment_intent_id. Stripe API is configured with a valid secret key.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits payment_intent_id after frontend payment attempt.</li>
+                                <li>System retrieves PaymentIntent from Stripe to check status.</li>
+                                <li>If status is succeeded, system updates reservation to succeeded and sends confirmation email.</li>
+                                <li>System returns success message.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> Payment status updated; user receives confirmation email.</p>
+                            <p><strong>Exceptions:</strong> Non-existent reservation, non-succeeded payment, or Stripe API errors return error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">24. Analyze Symptoms</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user submits symptoms (text) and/or a medical image for AI analysis to receive a probable diagnosis, recommended specialization, and advice.</p>
+                            <p><strong>Actor:</strong> User</p>
+                            <p><strong>Preconditions:</strong> User provides either text describing symptoms or an image (or both). Image, if provided, is a valid image file (e.g., JPEG, max 5MB).</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits symptoms (text) and/or uploads an image via analysis form.</li>
+                                <li>System validates input (text nullable, image optional, valid format).</li>
+                                <li>System builds a prompt combining symptoms and/or image analysis instructions.</li>
+                                <li>System calls Gemini API (gemini-2.0-flash) with prompt and image data (if provided).</li>
+                                <li>System parses response into JSON format (diagnosis, specialization, advice, confidence, medications).</li>
+                                <li>System returns analysis results with confidence message and medication warning.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> User receives AI-generated health analysis with diagnosis, advice, and warnings.</p>
+                            <p><strong>Exceptions:</strong> Missing input, invalid image, or Gemini API errors return error responses.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">25. Analyze Prescription Image</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user uploads a prescription image for AI analysis to extract medication details, prescription summary, and advice.</p>
+                            <p><strong>Actor:</strong> User</p>
+                            <p><strong>Preconditions:</strong> System is configured with a valid GEMINI_API_KEY. User provides a valid image file (e.g., JPEG, max 5MB) of a prescription.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User uploads prescription image via analysis form.</li>
+                                <li>System validates image (required, valid format).</li>
+                                <li>System builds a prompt to extract medications, prescription details, and advice.</li>
+                                <li>System calls Gemini API (gemini-2.0-flash) with prompt and image data.</li>
+                                <li>System parses response into JSON (medications, prescription details, advice, confidence).</li>
+                                <li>System returns analysis with confidence message and warning.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> User receives prescription details, medications, and warnings.</p>
+                            <p><strong>Exceptions:</strong> Invalid image, unclear prescription, or Gemini API errors return error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">26. Get Medicine Details</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user requests detailed information about a specific medicine, including indications, dosage, side effects, and precautions.</p>
+                            <p><strong>Actor:</strong> User</p>
+                            <p><strong>Preconditions:</strong> User provides a request with medicine name.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User submits a medicine name for analysis.</li>
+                                <li>System builds a prompt for detailed medicine information in Arabic.</li>
+                                <li>System calls Gemini API (gemini-2.0-flash) with the prompt.</li>
+                                <li>System parses JSON response (indications, dosage, side effects, precautions, additional info).</li>
+                                <li>System returns medicine details.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> User receives detailed medicine information.</p>
+                            <p><strong>Exceptions:</strong> Invalid medicine name or Gemini API errors return error.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">27. Analyze Lab Test Report</h3>
+                        <div class="accordion-content">
+                            <p><strong>Description:</strong> A user uploads a lab test report (image or PDF) for AI analysis to extract test results, interpretation, and recommendations.</p>
+                            <p><strong>Actor:</strong> User</p>
+                            <p><strong>Preconditions:</strong> User provides a valid file (JPEG, PNG, or PDF, max 5MB) of a lab test report.</p>
+                            <p><strong>Steps:</strong></p>
+                            <ul>
+                                <li>User uploads lab test report file via analysis form.</li>
+                                <li>System validates file (required, valid format).</li>
+                                <li>System builds a prompt to extract test results, interpretation, and recommendations.</li>
+                                <li>System calls Gemini API (gemini-2.0-flash) with prompt and file data.</li>
+                                <li>System parses response into JSON (test results, interpretation, recommendations).</li>
+                                <li>System returns analysis with warning.</li>
+                            </ul>
+                            <p><strong>Outcome:</strong> User receives lab test analysis with results, interpretation, and warnings.</p>
+                            <p><strong>Exceptions:</strong> Invalid file, unclear report, or Gemini API errors return error.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Team</h2>
+                <p>LEVEL 4 [2025] - CS Department</p>
+                <div class="supervisor">
+                    <h3>Supervised by:</h3>
+                    <p>Dr. Seham Elaw Amer</p>
+                </div>
+            </div>
+            <div class="team-grid staggered-container">
+                <div class="team-member" data-aos="fade-up">
+                    <div class="member-image person-icon" style="background-color: #4285f4;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Abdulrahman Abdel Samee</h3>
+                        <p class="role">Back-End</p>
+                        <p class="department">CS</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-image person-icon" style="background-color: #34a853;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mohamed Ahmed Ali</h3>
+                        <p class="role">Back-End</p>
+                        <p class="department">CS</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-image person-icon" style="background-color: #ea4335;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Nehal Tarek</h3>
+                        <p class="role">Back-End</p>
+                        <p class="department">CS</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-image person-icon" style="background-color: #fbbc05;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Nada Mohamed</h3>
+                        <p class="role">Front-End</p>
+                        <p class="department">CS</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                    <div class="member-image person-icon" style="background-color: #4285f4;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mayada Mohamed</h3>
+                        <p class="role">Front-End</p>
+                        <p class="department">CS</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="500">
+                    <div class="member-image person-icon" style="background-color: #34a853;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Abdallah Adel</h3>
+                        <p class="role">UI/UX</p>
+                        <p class="department">CS</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="600">
+                    <div class="member-image person-icon" style="background-color: #ea4335;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Ahmed Mansour</h3>
+                        <p class="role">Mobile Developer</p>
+                        <p class="department">CS</p>
+                    </div>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="700">
+                    <div class="member-image person-icon" style="background-color: #fbbc05;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Ali Maher Mohamed</h3>
+                        <p class="role">Mobile Developer</p>
+                        <p class="department">CS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acknowledgments Section -->
+    <section id="acknowledgments" class="acknowledgments">
+        <div class="container">
+            <div class="section-header">
+                <h2>Acknowledgments</h2>
+                <p>Gratitude to our supporters</p>
+            </div>
+            <div class="acknowledgments-content">
+                <div class="acknowledgment-cards">
+                    <div class="acknowledgment-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Academic Guidance</h3>
+                        <p>We express our deepest gratitude to our Advisor Dr. Seham for her support, outstanding guidance, and encouragement throughout our graduation project.</p>
+                    </div>
+                    <div class="acknowledgment-card">
+                        <div class="card-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Technical Support</h3>
+                        <p>We thank Engineer Dr. Elnomery Zanaty for his continuous support and help, always providing more than the needed time and effort since the project's beginning.</p>
+                    </div>
+                    <div class="acknowledgment-card">
+                        <div class="card-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Family Support</h3>
+                        <p>We are grateful to our families, especially our parents. We hope they are proud of us in our final year of education, and we aim to give back to the community soon.</p>
+                    </div>
+                    <div class="acknowledgment-card">
+                        <div class="card-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Faculty Appreciation</h3>
+                        <p>Finally, we thank our faculty for providing courses that guided us and the professors who left a significant impact on our lives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary" class="summary">
+        <div class="container">
+            <div class="section-header">
+                <h2>Summary</h2>
+                <p>Overview of the MediCare platform</p>
+            </div>
+            <div class="summary-content">
+                <div class="summary-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Appointment Booking</h3>
+                        <p>Seamless doctor appointment scheduling</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Doctor Specializations</h3>
+                        <p>Find the right specialist for your needs</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Rating System</h3>
+                        <p>Make informed decisions with transparent ratings</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Verified Information</h3>
+                        <p>Credible and accurate doctor profiles</p>
+                    </div>
+                </div>
+                <div class="summary-description">
+                    <p>MediCare is a comprehensive medical application and website designed to simplify healthcare access. It enables users to book doctor appointments, view doctor specializations, and read ratings for informed decision-making. The platform ensures the credibility and accuracy of doctor information, with each professional having a rating system to evaluate their performance. MediCare aims to provide a seamless and reliable healthcare experience for users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#4285f4" fill-opacity="0.2" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="MediCare Logo">
+                        <span>MediCare</span>
+                    </div>
+                    <p class="footer-description">A comprehensive healthcare platform designed to simplify medical appointments and provide reliable doctor information.</p>
+                    <div class="footer-social">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links-container">
+                    <div class="footer-links">
+                        <h3>Main Sections</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#introduction">Introduction</a></li>
+                            <li><a href="#problem">Problem Definition</a></li>
+                            <li><a href="#analysis">Project Analysis</a></li>
+                            <li><a href="#tools">Project Tools</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>More Sections</h3>
+                        <ul>
+                            <li><a href="#design">System Design</a></li>
+                            <li><a href="#usecases">Use Cases</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#acknowledgments">Acknowledgments</a></li>
+                            <li><a href="#summary">Summary</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="#demo">Interactive Demo</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 MediCare. All Rights Reserved.</p>
+                <p class="footer-credits">Developed by CS Department - Level 4 [2025]</p>
+            </div>
+        </div>
+        <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/mobile-nav-fix.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+        // Initialize particles.js
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', {
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#4285f4"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.5,
+                            "random": false,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 40,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#4285f4",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 2,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": true,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "grab"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 140,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+        });
+    </script>
+</body>
+</html>

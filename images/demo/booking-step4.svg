@@ -1,0 +1,60 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f5f5f5"/>
+  <rect x="50" y="50" width="700" height="400" rx="10" fill="white" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="60" rx="10" fill="#4285f4"/>
+  <text x="100" y="85" font-family="Arial" font-size="24" fill="white">MediCare</text>
+  
+  <!-- Back Button -->
+  <rect x="80" y="130" width="80" height="30" rx="15" fill="#eee" stroke="#ddd" stroke-width="1"/>
+  <text x="100" y="150" font-family="Arial" font-size="14" fill="#555">← Back</text>
+  
+  <!-- Title -->
+  <text x="150" y="150" font-family="Arial" font-size="22" font-weight="bold" fill="#333">Appointment Summary</text>
+  
+  <!-- Appointment Details -->
+  <rect x="150" y="170" width="500" height="180" rx="10" fill="white" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Doctor Info -->
+  <circle cx="190" cy="210" r="25" fill="#4285f4"/>
+  <text x="190" y="217" font-family="Arial" font-size="18" fill="white" text-anchor="middle">👨‍⚕️</text>
+  <text x="240" y="200" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Dr. Ahmed Hassan</text>
+  <text x="240" y="220" font-family="Arial" font-size="14" fill="#555">Cardiology • Cairo Medical Center</text>
+  
+  <!-- Divider -->
+  <line x1="150" y1="240" x2="650" y2="240" stroke="#eee" stroke-width="2"/>
+  
+  <!-- Date and Time -->
+  <text x="190" y="270" font-family="Arial" font-size="16" fill="#333">📅 Date:</text>
+  <text x="270" y="270" font-family="Arial" font-size="16" fill="#333">May 24, 2025</text>
+  
+  <text x="190" y="300" font-family="Arial" font-size="16" fill="#333">🕒 Time:</text>
+  <text x="270" y="300" font-family="Arial" font-size="16" fill="#333">10:30 AM</text>
+  
+  <!-- Divider -->
+  <line x1="150" y1="320" x2="650" y2="320" stroke="#eee" stroke-width="2"/>
+  
+  <!-- Price -->
+  <text x="190" y="340" font-family="Arial" font-size="16" fill="#333">💰 Fee:</text>
+  <text x="270" y="340" font-family="Arial" font-size="16" fill="#333">300 EGP</text>
+  
+  <!-- Payment Options -->
+  <text x="150" y="380" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Payment Method</text>
+  
+  <rect x="150" y="390" width="120" height="40" rx="5" fill="#4285f4"/>
+  <text x="210" y="415" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Credit Card</text>
+  
+  <rect x="280" y="390" width="120" height="40" rx="5" fill="#eee"/>
+  <text x="340" y="415" font-family="Arial" font-size="14" fill="#555" text-anchor="middle">Insurance</text>
+  
+  <rect x="410" y="390" width="120" height="40" rx="5" fill="#eee"/>
+  <text x="470" y="415" font-family="Arial" font-size="14" fill="#555" text-anchor="middle">Cash</text>
+  
+  <!-- Confirm Button -->
+  <rect x="550" y="390" width="120" height="40" rx="20" fill="#34a853"/>
+  <text x="610" y="415" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Confirm</text>
+  
+  <!-- Step Indicator -->
+  <text x="400" y="450" font-family="Arial" font-size="18" fill="#4285f4" text-anchor="middle">Step 4: Confirm & Pay</text>
+</svg>
